@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://livescore-api.com/api-client/scores/live.json?competition_id=45&key=sASuCpO9skbz3Qhw&secret=unL319DF2ywt4sTw3L0FbOPD91ccRuJm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Apr 2022 03:49:44 GMT
+      Server:
+      - Apache/2.4.25 (Debian)
+      Set-Cookie:
+      - PHPSESSID=b1k2nmgk42d58veb9uq66o7351; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '1030'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":{"match":[{"competition_name":"Liga MX","league_id":0,"has_lineups":true,"odds":{"pre":{"1":1.9,"2":4.2,"X":3.4}},"id":317877,"home_id":1465,"away_name":"Atl\u00e9tico
+        San Luis","league_name":"","country":{"id":57,"name":"Mexico"},"events":"https:\/\/livescore-api.com\/api-client\/scores\/events.json?key=sASuCpO9skbz3Qhw&amp;secret=unL319DF2ywt4sTw3L0FbOPD91ccRuJm&amp;id=317877","federation":null,"ht_score":"0
+        - 0","score":"1 - 0","ps_score":"","scheduled":"02:05","et_score":"","last_changed":"2022-04-07
+        03:48:23","fixture_id":1519585,"home_name":"Tijuana","competition_id":45,"added":"2022-04-07
+        01:51:29","location":"Estadio Caliente","h2h":"https:\/\/livescore-api.com\/api-client\/teams\/head2head.json?team1_id=1465&secret=unL319DF2ywt4sTw3L0FbOPD91ccRuJm&key=sASuCpO9skbz3Qhw&team2_id=3357","away_id":3357,"status":"IN
+        PLAY","ft_score":"","time":"83","outcomes":{"half_time":"X","full_time":null,"extra_time":null},"info":"This
+        match is only supported through the new competitions structure"}]}}'
+    http_version:
+  recorded_at: Thu, 07 Apr 2022 03:49:45 GMT
+recorded_with: VCR 3.0.3
