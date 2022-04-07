@@ -22,11 +22,11 @@ module WebService
     def parse_response(response)
       JSON.parse(response.body)
     rescue JSON::ParserError
-      PayerError.unavailable.to_h
+      raise 'Parser error'
     rescue Faraday::TimeoutError
-      PayerError.timeout.to_h
+      raise 'Timeout error'
     rescue Faraday::ConnectionFailed, Errno::ECONNREFUSED
-      PayerError.server_error.to_h
+      raise 'Server error'
     end
 
     def base_url
