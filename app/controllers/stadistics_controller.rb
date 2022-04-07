@@ -19,6 +19,6 @@ class StadisticsController < ApplicationController
   end
 
   def welcome
-    render json: 'Welcome to Liga Mx stats'
+    render json: { message: 'Welcome to Liga Mx stats' }
   end
 end
